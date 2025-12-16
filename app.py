@@ -181,7 +181,7 @@ FULL_FRONTEND_HTML = """
 <body>
     <h1><strong>Welcome to G-16 Project</strong></h1>
     <h1 style="color: brown;">Secure User Authentication System Using Flask</h1>
-    <h3 style="text-align: center;color: slategrey;"><b> <span class="span">Project Guide:</span></b> <span class="span1" ></span> <span class="span1">Mrs.B.Vijaya Lakshmi</span1><br><b><span class="span">Project members:</span></b> <br><span class="span1" >T Priyanka<br>S Nafeesa Ruksana <br> E Deepika <br>S Sharon Priyanka</span></h3>
+    <h3 style="text-align: center;color: slategrey;"><b> <span class="span">Project Guide:</span></b> <span class="span1" ></span> <span class="span1">Mrs.B.Vijaya Lakshmi</span1><br><b><span class="span">Project members:</span></b> <br><span class="span1" >T Priyanka<br>SK Nafeesa Ruksana <br> E Deepika <br>S Sharon Priyanka</span></h3>
     <div class="container">
         <!-- Flask Flash Messages Rendered Here -->
         {% with messages = get_flashed_messages(with_categories=true) %}
