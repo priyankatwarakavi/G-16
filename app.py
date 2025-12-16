@@ -8,7 +8,7 @@ from flask_limiter.util import get_remote_address
 
 load_dotenv()
 
-OWNER_DOWNLOAD_KEY = os.getenv("OWNER_DOWNLOAD_KEY", "skro@0513")
+OWNER_DOWNLOAD_KEY = os.getenv('OWNER_DOWNLOAD_KEY')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback_secret_key')
