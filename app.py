@@ -11,7 +11,7 @@ load_dotenv()
 OWNER_DOWNLOAD_KEY = os.getenv('OWNER_DOWNLOAD_KEY')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'fallback_secret_key')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 bcrypt = Bcrypt(app)
 
 limiter = Limiter(
@@ -198,7 +198,6 @@ FULL_FRONTEND_HTML = """
         <nav>
             <ul>
                 <!-- Note: url_for('index') needs explicit _external=True to keep the #hash intact on redirect -->
-                <li><a href="{{ url_for('index', _external=True) }}#welcome" class="my-hover-link">Welcome</a></li>
                 <li><a href="{{ url_for('index', _external=True) }}#register" class="my-hover-link">Register</a></li>
                 <li><a href="{{ url_for('index', _external=True) }}#login" class="my-hover-link">Login</a></li>
             </ul>
